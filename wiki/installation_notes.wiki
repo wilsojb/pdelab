@@ -7,10 +7,12 @@ _make_ _clean_
 
 _make_
 
-I recommend setting adding the following lines to your .profile located in the home directory (Mac/Linux users): 
+
+Before you execute this build, you must have the g++ (gcc) compiler.  This build has only been tested on a Mac OS X.  If you have problems with installation please post it under the Issues tab. I recommend adding the following lines to your .profile located in the home directory (Mac/Linux users only): 
 
 _#Setting PATH for pdelab binaries_
 
 _export PATH=$PATH:{root_directory}/pdelab/bin_
 
-Before you execute this build, you must have the g++ (gcc) compiler.  This build has only been tested on a Mac OS X.  If you have problems with installation please post it under the Issues tab.
+
+
