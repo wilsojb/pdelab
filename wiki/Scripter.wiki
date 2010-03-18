@@ -1,1 +1,1 @@
-This is script text
+Scripter is the class responsible for generating a gnuplot script that will simulate the newly generated data files. It is called automatically when the sim command is called or it can be invoked directly by typing script {equation name} {optional vars} .
