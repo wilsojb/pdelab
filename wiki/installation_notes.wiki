@@ -7,4 +7,4 @@ make clean
 
 make
 
-Before you execute this build, you must have the g++ (gcc) compiler.  This build has only been tested on a Mac OS X.  If you have problems with installation please post this on the wiki page.
+Before you execute this build, you must have the g++ (gcc) compiler.  This build has only been tested on a Mac OS X.  If you have problems with installation please post it under the Issues tab.
