@@ -3,8 +3,14 @@
 
 The pdelab binary should be located in the bin directory after executing the following build from the root pdelab directory:
 
-make clean
+_make_ _clean_
 
-make
+_make_
+
+I recommend setting adding the following lines to your .profile located in the home directory (Mac/Linux users): 
+
+_#Setting PATH for pdelab binaries_
+
+_export PATH=$PATH:{root_directory}/pdelab/bin_
 
 Before you execute this build, you must have the g++ (gcc) compiler.  This build has only been tested on a Mac OS X.  If you have problems with installation please post it under the Issues tab.
