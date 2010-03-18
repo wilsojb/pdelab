@@ -1,0 +1,21 @@
+The following commands are available to you via the pdelab> prompt.  This list may be incomplete as new commands are being added all the time.  For a complete list of the available commands check pdelab/src/terminal.cpp.  For a short description of the usage, either check pdelab/src/eventhandler.h or type _help_ under the pdelab> prompt.
+
+Basic Commands
+*exit
+*quit
+*#
+*view
+*help
+*save
+*load
+*erase
+
+Solver Commands
+*sim
+*resim
+*script
+
+Observer Commands
+*set
+*unset
+*norm
