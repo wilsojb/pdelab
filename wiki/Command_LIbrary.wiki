@@ -2,34 +2,34 @@ The following commands are available to you via the pdelab> prompt.  This list m
 
 Basic Commands
 
-*exit
+* exit
 
-*quit
+* quit
 
-*#
+* #
 
-*view
+* view
 
-*help
+* help
 
-*save
+* save
 
-*load
+* load
 
-*erase
+* erase
 
 Solver Commands
 
-*sim
+* sim
 
-*resim
+* resim
 
-*script
+* script
 
 Observer Commands
 
-*set
+* set
 
-*unset
+* unset
 
-*norm
+* norm
