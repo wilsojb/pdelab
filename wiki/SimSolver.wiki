@@ -1,0 +1,1 @@
+SimSolver is the class responsible for generating the solution into a set of data files located in _pdelab/examples/sim_data/[equation_name}data/_ . The data files should be numbered something like _{equation_name}478.dat_ and there will also be a _param.dat_ data file that contains metadata used by the Scripter class.
