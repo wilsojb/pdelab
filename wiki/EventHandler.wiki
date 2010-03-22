@@ -1,1 +1,1 @@
-EventHandler wiki
+EventHandler handles all commands coming from the Terminal.  
