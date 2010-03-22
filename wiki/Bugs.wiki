@@ -1,3 +1,0 @@
-Known Bugs:
-
-*  Manipulator class does not work
