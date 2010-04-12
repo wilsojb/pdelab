@@ -1,0 +1,11 @@
+ObserverMap is the map that contains all of the currently set Observers.  Once a simulation is called (via the 'sim' command) all of the Observers currently residing in the ObserverMap will collect data on the simulation as it runs.  You can add an Observer to the map by simply typing ...
+
+pdelab > set [observer-name] [sim-name]
+
+You can remove an observer from the map by typing...
+
+pdelab > unset [observer-name]
+
+or...
+
+pdelab >unset all
