@@ -1,1 +1,0 @@
-EventHandler handles all commands coming from the Terminal.  It maintains the ObserverMap and the all other containers and variables used to pass information from the user to the simulation.
