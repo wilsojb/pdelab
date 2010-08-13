@@ -1,4 +1,0 @@
-#summary Abstract class that all Observers extend
-
-Abstract class that all Observers extend.  Found in src/observer.h.  
-
