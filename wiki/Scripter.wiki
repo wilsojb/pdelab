@@ -1,1 +1,0 @@
-Scripter is the class responsible for generating a gnuplot script that will simulate the newly generated data files. It is called automatically when the _sim_ command is called or it can be invoked directly by typing _script {equation name} {optional vars}_  .
