@@ -1,0 +1,11 @@
+help:
+	@echo
+	@echo --- List of available make options ---
+	@echo Builds ---
+	@echo make [all / makelib]
+	@echo
+	@echo Cleans ---
+	@echo make [clean / cleanlib / cleangp / 
+	@echo	    cleanpde /  cleandat / cleandepend /
+	@echo       spotless]
+	@echo ---------------------------------------

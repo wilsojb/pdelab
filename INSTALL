@@ -1,0 +1,70 @@
+INSTALLATION INSTRUCTIONS:
+NOTE:  In order to use pdelab, you will at least need the gcc compiler and the make utility installed.  pdelab has been built on a Mac OSX and Linux with the gcc and intel compilers
+
+1.  Download the most recent pdelab_version.tgz and optionally, LAlib_version.tgz
+2.  Move the .tgz(s) to a directory of choice
+3.  At the command prompt type,
+		$> tar -xvf pdelab_version.tgz
+		$> tar -xvf LAlib_version.tgz
+
+4.  Open pdelab/makefile, LAlib/makefile, and pdelab/examples/makefile.
+	Edit the compiler and linker locations and flags for each.  This should
+	be the only change necessary to the makefiles.
+
+5.  At the command prompt type,
+		$> cd pdelab
+		$> make spotless
+		$> make
+
+6.  Add the paths "pdelab/bin/" and "pdelab/py" to your .bashrc, .bash_profile, or .profile (usually found in your home directory).  This is accomplished by placing the following three lines in one of those files.
+		#Setting PATH for pdelab binaries and python scripts
+		PATH=[your root directory]/pdelab/bin:$PATH
+		PATH=[your root directory]/pdelab/py:$PATH
+
+
+7.  It is important that you run pdelab from the pdelab/ root directory.  This will insure that files created by pdelab are stored in the appropriate location.  From the pdelab root directory, type in the command prompt
+		$> pdelab
+		pdelab > sim advec 500
+		pdelab > exit
+
+This should create a new folder dat/1D/advec/ and within that folder you should find .dat files (one for each timestep) that correspond to the solution to the advection equation example found in examples/1D/advec.cpp and examples/1D/advec.h.  Now type
+
+		$> pdelab
+		pdelab > script advec 1 0 500 0
+		pdelab > gnuplot
+		gnuplot> load 'gp/advec.gp'
+		gnuplot> exit
+		pdelab > exit
+		$>
+
+This will create a gnuplot script that will display the advection data you just created.  Follow through with the gnuplot commands to view the solution.
+
+
+
+EXTERNAL DEPENDENCIES
+Although not required in order to generate data using pdelab, the following external dependencies (or more up-to-date versions) should be installed in order to experience the full power of the pdelab project.
+
+python-2.6.5
+gnuplot-py-1.8
+ipython-0.10-py2.6
+numpy-1.4.1rc3-py2.6
+scipy-0.7.2rc3-py2.6
+matplotlib-0.99.1.1-py2.6
+setuptools-0.6c11-py2.6
+
+Upon extracting the ipython package, you will notice ipython.pdf.  It is highly recommended that you briefly read this document, especially with regards to the features that python provides as well as the installation of ipython using the setuptools package.  
+
+pdelab in conjunction with Scipy.org presents a powerful environment for solving and analyzing PDEs.  Check out some of the .py scripts found in the py/ directory in order to see some of the possibilities.  Once all of the external dependencies are installed, you can automate very complicated tasks with only a few commands.  Try the following from the command prompt,
+
+$> ipython -pylab 
+In [1]: run py/simplot.py
+
+or...
+
+$> python py/simplot.py
+
+
+This will run the py/simplot.py script which solves a PDE (advection by default), stores the results in dat/1D/advec/, and then plots the solution in gnuplot.  Edit py/simplot.py to change simulation variables.
+
+
+
