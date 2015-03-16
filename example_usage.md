@@ -1,0 +1,20 @@
+### Example Usage ###
+
+---
+
+
+Once you have completed the installation, you should be able to enter the environment by simply typing "pdelab".  Once this works properly, try typing "sim advec 500" to simulate the included advection solution example with 500 time steps.  The outcome should be a series of messages that look something like the following:
+
+_Completion Status: 20%...40%...60%...80%..._
+
+_SimSolver::invoke() Successful._
+
+_Scripter::invoke() Successful._
+
+_sim time = 0.753451 secs_
+
+SimSolver is the class responsible for generating the solution (in this case, to the advection equation) into a set of data files located in _pdelab/dat/1D/advec/_ .  The data files should be numbered something like _ADVEC478.dat_ and there will also be a _param.dat_ data file that contains metadata used by the [Scripter](Scripter.md) class.  This message states that the process succeeded.
+
+[Scripter](Scripter.md) is the class responsible for generating a gnuplot script that will simulate the newly generated data files.  It is called automatically when the _sim_ command is called or it can be invoked directly by typing _script {equation name} {optional vars}_ .
+
+In order to quickly visualize your solutions (if you have the gnuplot binaries installed on your system), simply type _gnuplot_ and then _load 'gp/advec.gp'_
