@@ -2,12 +2,6 @@
 ### Overview
 An object oriented framework for solving and analyzing PDEs. This project grew organically while I worked (read: toiled) on my graduate degree. The goal of the framework was to abstract away the mechanics and other "lower level" code needed to solve PDEs so the researcher can spend more time focusing on their solver (i.e. their "business logic"). 
 
-### Key Features
-* **Homegrown solvers**
-* **Graphing Utilites**
-* **CLI**
-* **Examples**
-
 ### Installation
 
 1.  Open pdelab/makefile and pdelab/examples/makefile. Edit the compiler and linker locations and flags for each. This should be the only change necessary to the makefiles.
