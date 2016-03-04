@@ -10,9 +10,19 @@ An object oriented framework for solving and analyzing PDEs. This project grew o
 
 ### Installation
 
+1.  Open pdelab/makefile and pdelab/examples/makefile. Edit the compiler and linker locations and flags for each. This should be the only change necessary to the makefiles.
+
+2.  Excecute the following make commands from the project's root directory,
+
 ````bash
-bower install auth0-angular
+$ cd pdelab
+$ make spotless
+$ make
 ````
+
+3. (Optionally) Add the paths "pdelab/bin/" and "pdelab/py" to your .profile
+4. Type `pdelab` from the project's root directory to launch the CLI. 
+
 
 ### TL;DR: Quick start guide
 
@@ -61,6 +71,20 @@ This runs a simulation, creates a file that gnuplot can read, calculates norms, 
 More complicated analysis is possible using some of the other Instructions (see diffnorm.py) or if there is a need for one
 that doesn't exist, you can always make a new one!
 
+### Dependencies
+
+In order to use pdelab, you will at least need the gcc compiler and the make utility installed.  pdelab has been built on a Mac OSX and Linux with the gcc and intel compilers. Here are some other useful packages that will make for a much richer experience. 
+
+````bash
+$ pip freeze 
+python-2.6.5
+gnuplot-py-1.8
+ipython-0.10-py2.6
+numpy-1.4.1rc3-py2.6
+scipy-0.7.2rc3-py2.6
+matplotlib-0.99.1.1-py2.6
+setuptools-0.6c11-py2.6
+````
 
 ### Author
 
